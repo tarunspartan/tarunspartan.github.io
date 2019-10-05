@@ -12,6 +12,7 @@ code {
 }
 
 #blink {
+    font-size: 40px;
     animation: blink infinite  0.5s;
   } 
 
