@@ -4,6 +4,7 @@ body {
 code {
     color: whitesmoke; 
     font-size: 50px;
+    line-height: 1.6;
 }
 
 .sym {
