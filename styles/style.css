@@ -1,0 +1,28 @@
+body {
+    background-color: black
+}
+code {
+    color: azure
+}
+.blink {
+    animation: blink infinite 0.2s 1s;
+  } 
+
+  @keyframes blink {
+    from {opacity: 0;}
+    to {opacity: 1;} 
+  }
+
+h1 {
+    z-index: -1;
+    padding: 50% 0%;
+    text-align: center;
+    animation: rgb 1s infinite ;
+}
+
+@keyframes rgb {
+    33%   {color: red }
+    66% {color: green;}
+    100%  {color: blue;}
+  }
+
