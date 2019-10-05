@@ -11,7 +11,7 @@ code {
 }
 
 #blink {
-    animation: blink infinite 0.2s 1s;
+    animation: blink infinite  0.5s;
   } 
 
   @keyframes blink {
@@ -23,7 +23,7 @@ code {
     z-index: -1;
     padding: 50% 0%;
     text-align: center;
-    animation: rgb 1s infinite ;
+    animation: rgb 2s infinite ;
 }
 
 @keyframes rgb {
