@@ -13,6 +13,7 @@ code {
 
 #blink {
     font-size: 40px;
+    color: cadetblue;
     animation: blink infinite  0.5s;
   } 
 
@@ -29,8 +30,9 @@ code {
 }
 
 @keyframes rgb {
-    33%   {color: red }
-    66% {color: green;}
-    100%  {color: blue;}
+    0%   {color: red }
+    33% {color: #00ff00 }
+    66%  {color: blue}
+    100%   {color: red }
   }
 
