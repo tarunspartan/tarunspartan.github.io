@@ -13,7 +13,7 @@ code {
 
 #blink {
     font-size: 40px;
-    color: cadetblue;
+    color: gray;
     animation: blink infinite  0.5s;
   } 
 
