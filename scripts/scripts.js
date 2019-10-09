@@ -9,7 +9,7 @@ function createInput() {
     let inputElmnt = document.createElement("input");
     inputElmnt.setAttribute("id","help");
     inputElmnt.setAttribute("type","text");
-    inputElmnt.setAttribute("placeholder","type here");
+    // inputElmnt.setAttribute("placeholder","Type here...");
     inputElmnt.setAttribute("onkeydown","onEnter(event,value)");
     // inputElmnt.autofocus = true;
     // document.getElementById("help");
@@ -42,7 +42,6 @@ function onEnter(event , val) {
 
             case 'sn':
                 let sn = document.createElement("code");
-                sn.setAttribute("id","error");
                 sn.innerHTML="<a target='_blank' href='https://github.com/tarunspartan'><img width=80 height=80 src='./images/github.svg'></a> <a target='_blank' href='https://api.whatsapp.com/send?phone=9000163423'><img width=80 height=80 src='./images/whatsapp.svg'></a> <a target='_blank' href='https://www.facebook.com/tarunspartan1'><img width=80 height=80 src='./images/facebook.svg'></a> <a target='_blank' href='https://twitter.com/tarunspartan1'><img width=80 height=80 src='./images/twitter.svg'></a> <a target='_blank' href='https://www.instagram.com/tarunspartan/'><img width=80 height=80 src='./images/instagram.svg'></a> <a target='_blank' href='https://www.linkedin.com/in/tarunspartan/'><img width=80 height=80 src='./images/linkedin.svg'></a>";
                 document.getElementById("main").append(sn);
                 let snbr = document.createElement("br");
@@ -51,7 +50,12 @@ function onEnter(event , val) {
                 break;
 
             case 'edu':
-
+                let edu = document.createElement("code");
+                edu.innerHTML="Still working on this...";
+                document.getElementById("main").append(edu);
+                let edubr = document.createElement("br");
+                document.getElementById('main').appendChild(edubr);
+                createInput();
                 break;
 
             case '':

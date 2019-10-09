@@ -12,8 +12,8 @@ code {
     color: lightsalmon
 }
 
-#help {
-  color : whitesmoke;
+.help {
+  color : green;
 }
 
 #more {
