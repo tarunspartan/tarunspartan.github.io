@@ -12,8 +12,8 @@ code {
     color: lightsalmon
 }
 
-.help {
-  color : green;
+#help {
+  color : whitesmoke;
 }
 
 #more {
@@ -51,7 +51,7 @@ input {
   font-size: 50px;
   border-color: black;
   outline-color: black;
-  caret-color: green;
+  caret-color: white;
   justify-content: flex-end;
 
 }

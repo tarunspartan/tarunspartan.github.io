@@ -9,9 +9,10 @@ function createInput() {
     let inputElmnt = document.createElement("input");
     inputElmnt.setAttribute("id","help");
     inputElmnt.setAttribute("type","text");
+    inputElmnt.setAttribute("placeholder","type here");
     inputElmnt.setAttribute("onkeydown","onEnter(event,value)");
     // inputElmnt.autofocus = true;
-    document.getElementById("help");
+    // document.getElementById("help");
     inputElmnt.setAttribute("autofocus","autofocus");
     spanElmnt.append(inputElmnt);
     document.getElementById('main').append(codeUK);
@@ -26,14 +27,13 @@ function onEnter(event , val) {
     // let val = document.getElementById('help').value;
     if(event.key === "Enter"){
         disable();
-        console.log(val);
-
-        switch (val) {
+        let v = val.toLowerCase()
+        switch (v) {
             case 'help':
                 // console.log("help");
                 let help = document.createElement("code");
                 // help.setAttribute("id","error");
-                help.innerHTML="<span class='help'>sn</span> for social networks <br><span  class='help'>edu</span> for education<br>";
+                help.innerHTML="<span class='help'>sn</span> for social networks <br><span  class='help'>edu</span> for education";
                 document.getElementById("main").append(help);
                 let hbr = document.createElement("br");
                 document.getElementById('main').appendChild(hbr);
@@ -51,7 +51,7 @@ function onEnter(event , val) {
                 break;
 
             case 'edu':
-                
+
                 break;
 
             case '':
@@ -69,34 +69,6 @@ function onEnter(event , val) {
                 createInput();
                 break;
         }
-
-
-
-
-        // if(val === "help()" || val === ""){
-            
-        //     if(val === "help()") {
-                
-        //         console.log("help");
-        //         createInput();
-                
-        //     }else{
-
-        //         console.log("empty");
-                
-        //     }
-            
-        // }else{
-            
-        //     let unknown = document.createElement("code");
-        //     unknown.setAttribute("id","error");
-        //     unknown.innerText=val+" : command not found";
-        //     document.getElementById("main").append(unknown);
-        //     let br = document.createElement("br");
-        //     document.getElementById('main').appendChild(br);
-        //     createInput();
-            
-        // }
     }
 }
 
