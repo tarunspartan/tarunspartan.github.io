@@ -1,14 +1,23 @@
 body {
-    background-color: black
+    background-color: black;
 }
 code {
     color: whitesmoke; 
     font-size: 50px;
     line-height: 1.6;
+    /* text-shadow: 0 0 5px #C8C8C8; */
 }
 
 .sym {
     color: lightsalmon
+}
+
+.help {
+  color : green;
+}
+
+#more {
+    color: green;
 }
 
 #blink {
@@ -36,3 +45,21 @@ code {
     100%   {color: red }
   }
 
+input {
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  border-color: black;
+  outline-color: black;
+  caret-color: green;
+  justify-content: flex-end;
+
+}
+
+input:focus {
+  outline-style: none;
+}
+
+#error {
+  color: red
+}
