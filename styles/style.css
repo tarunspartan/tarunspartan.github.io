@@ -13,7 +13,7 @@ code {
 }
 
 #help{
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 .help {
