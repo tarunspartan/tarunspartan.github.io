@@ -8,6 +8,7 @@ function createInput() {
 
     let inputElmnt = document.createElement("input");
     inputElmnt.setAttribute("id","help");
+    inputElmnt.setAttribute("autocaptilize","none");
     inputElmnt.setAttribute("type","text");
     // inputElmnt.setAttribute("placeholder","Type here...");
     inputElmnt.setAttribute("onkeydown","onEnter(event,value)");
