@@ -7,10 +7,8 @@ function createInput() {
     codeUK.append(spanElmnt);
 
     let inputElmnt = document.createElement("input");
-    inputElmnt.setAttribute("id","help");
-    inputElmnt.setAttribute("autocaptilize","none");
+    inputElmnt.setAttribute("id","inputTag");
     inputElmnt.setAttribute("type","text");
-    // inputElmnt.setAttribute("placeholder","Type here...");
     inputElmnt.setAttribute("onkeydown","onEnter(event,value)");
     // inputElmnt.autofocus = true;
     // document.getElementById("help");
@@ -25,7 +23,6 @@ function createInput() {
 
 function onEnter(event , val) {
     // console.log(value);
-    // let val = document.getElementById('help').value;
     if(event.key === "Enter"){
         disable();
         let v = val.toLowerCase()
@@ -34,7 +31,7 @@ function onEnter(event , val) {
                 // console.log("help");
                 let help = document.createElement("code");
                 // help.setAttribute("id","error");
-                help.innerHTML="<span class='help'>sn</span> for social networks <br><span  class='help'>edu</span> for education";
+                help.innerHTML="<span class='cmd'>sn</span> for social networks <br><span  class='cmd'>edu</span> for education";
                 document.getElementById("main").append(help);
                 let hbr = document.createElement("br");
                 document.getElementById('main').appendChild(hbr);
@@ -79,7 +76,7 @@ function onEnter(event , val) {
 }
 
 function disable() {
-    document.getElementById("help").setAttribute("disabled","");
-    document.getElementById("help").removeAttribute("autofocus","autofocus");
-    document.getElementById("help").removeAttribute("id","help");
+    document.getElementById("inputTag").setAttribute("disabled","");
+    document.getElementById("inputTag").removeAttribute("autofocus","autofocus");
+    document.getElementById("inputTag").removeAttribute("id","inputTag");
 }

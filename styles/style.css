@@ -12,18 +12,11 @@ code {
     color: lightsalmon
 }
 
-#help{
-  /* text-transform: lowercase; */
-}
-
-.help {
+.cmd {
   color : green;
   font-size: 50px;
 }
 
-#more {
-    color: green;
-}
 
 #blink {
     font-size: 40px;
@@ -54,7 +47,7 @@ input {
   background-color: black;
   color: white;
   font-size: 50px;
-  border-color: black;
+  border-color:black;
   outline-color: black;
   caret-color: white;
   justify-content: flex-end;
@@ -66,5 +59,5 @@ input:focus {
 }
 
 #error {
-  color: red
+  color: red;
 }
