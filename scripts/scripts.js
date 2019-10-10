@@ -8,10 +8,10 @@ function createInput() {
 
     let inputElmnt = document.createElement("input");
     inputElmnt.setAttribute("id","inputTag");
+    document.getElementById("inputTag");
     inputElmnt.setAttribute("type","text");
     inputElmnt.setAttribute("onkeydown","onEnter(event,value)");
     // inputElmnt.autofocus = true;
-    // document.getElementById("help");
     inputElmnt.setAttribute("autofocus","autofocus");
     spanElmnt.append(inputElmnt);
     document.getElementById('main').append(codeUK);
@@ -31,7 +31,7 @@ function onEnter(event , val) {
                 // console.log("help");
                 let help = document.createElement("code");
                 // help.setAttribute("id","error");
-                help.innerHTML="<span class='cmd'>sn</span> for social networks <br><span  class='cmd'>edu</span> for education";
+                help.innerHTML="<span class='cmd'>sn</span> for social networks <br><span  class='cmd'>edu</span> for education<br><span class='cmd'>exp</span> for experience";
                 document.getElementById("main").append(help);
                 let hbr = document.createElement("br");
                 document.getElementById('main').appendChild(hbr);
@@ -40,7 +40,7 @@ function onEnter(event , val) {
 
             case 'sn':
                 let sn = document.createElement("code");
-                sn.innerHTML="<a target='_blank' href='https://github.com/tarunspartan'><img width=80 height=80 src='./images/github.svg'></a> <a target='_blank' href='https://api.whatsapp.com/send?phone=919000163423'><img width=80 height=80 src='./images/whatsapp.svg'></a> <a target='_blank' href='https://www.facebook.com/tarunspartan1'><img width=80 height=80 src='./images/facebook.svg'></a> <a target='_blank' href='https://twitter.com/tarunspartan1'><img width=80 height=80 src='./images/twitter.svg'></a> <a target='_blank' href='https://www.instagram.com/tarunspartan/'><img width=80 height=80 src='./images/instagram.svg'></a> <a target='_blank' href='https://www.linkedin.com/in/tarunspartan/'><img width=80 height=80 src='./images/linkedin.svg'></a><br>";
+                sn.innerHTML="<a target='_blank' href='https://github.com/tarunspartan'><img width=80 height=80 src='./images/github.svg'></a> <a target='_blank' href='https://api.whatsapp.com/send?phone=919000163423'><img width=80 height=80 src='./images/whatsapp.svg'></a> <a target='_blank' href='https://www.facebook.com/tarunspartan1'><img width=80 height=80 src='./images/facebook.svg'></a> <a target='_blank' href='https://twitter.com/tarunspartan1'><img width=80 height=80 src='./images/twitter.svg'></a> <a target='_blank' href='https://www.instagram.com/tarunspartan/'><img width=80 height=80 src='./images/instagram.svg'></a> <a target='_blank' href='https://www.linkedin.com/in/tarunspartan/'><img width=80 height=80 src='./images/linkedin.svg'></a> <a target='_blank' href='mailto:tarunspartan1234@outlook.com'><img width=80 height=80 src='./images/mail.svg'></a><br>";
                 document.getElementById("main").append(sn);
                 // let snbr = document.createElement("br");
                 // document.getElementById('main').appendChild(snbr);
@@ -50,11 +50,30 @@ function onEnter(event , val) {
 
             case 'edu':
                 let edu = document.createElement("code");
-                edu.innerHTML="Still working on this...";
+                edu.setAttribute("class","e");
+                edu.innerHTML="<b>Bachelor of Technology in CSE</b><br><i>Miracle Educational Society, VZM.<br>Graduated in 2019</i><br><br><b>Intermediate - MPC</b><br><i>Srinivasa Jr. College, VZM.<br>Graduated in 2015</i>";
                 document.getElementById("main").append(edu);
                 let edubr = document.createElement("br");
                 document.getElementById('main').appendChild(edubr);
                 createInput();
+                break;
+
+            case 'exp':
+                let exp = document.createElement("code");
+                exp.setAttribute("class","e");
+                exp.innerHTML="<b>Fresher</b><br><br><i>Currently learning React & have moderate knowledge on Angular & Ionic Framework.";
+                document.getElementById("main").append(exp);
+                let expbr = document.createElement("br");
+                document.getElementById('main').appendChild(expbr);
+                createInput();
+                break;
+
+            case 'clear': 
+                    window.location.reload(true);
+                break;
+
+            case 'cls': 
+                window.location.reload(true);
                 break;
 
             case '':

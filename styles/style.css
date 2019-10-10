@@ -60,3 +60,8 @@ input:focus {
 #error {
   color: red;
 }
+
+.e {
+  color : cadetblue;
+  font-size: 30px;
+}
