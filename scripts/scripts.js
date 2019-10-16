@@ -1,3 +1,7 @@
+window.addEventListener("click",function(){
+    document.getElementById("inputTag").focus();
+})
+
 function createInput() {
     
     let codeUK = document.createElement("code");
@@ -8,17 +12,16 @@ function createInput() {
 
     let inputElmnt = document.createElement("input");
     inputElmnt.setAttribute("id","inputTag");
-    document.getElementById("inputTag");
     inputElmnt.setAttribute("type","text");
     inputElmnt.setAttribute("onkeydown","onEnter(event,value)");
-    // inputElmnt.autofocus = true;
     inputElmnt.setAttribute("autofocus","autofocus");
     spanElmnt.append(inputElmnt);
     document.getElementById('main').append(codeUK);
     
     let br = document.createElement("br");
     document.getElementById('main').appendChild(br);
-    window.scrollTo(0,document.body.scrollHeight);
+    // window.scrollTo(0,document.body.scrollHeight);
+    document.getElementById("inputTag").focus();
 }
 
 function onEnter(event , val) {
@@ -68,6 +71,22 @@ function onEnter(event , val) {
                 createInput();
                 break;
 
+            case 'light':
+                document.documentElement.style.setProperty('--body-background-color', '#eeeeee');
+                document.documentElement.style.setProperty('--body-color', '#121212');
+                document.documentElement.style.setProperty('--input-color', 'black');
+                document.documentElement.style.setProperty('--input-caret-color', 'black');
+                createInput();
+                break;
+
+            case 'dark':
+                document.documentElement.style.removeProperty('--body-background-color', 'white');
+                document.documentElement.style.removeProperty('--body-color', 'black');
+                document.documentElement.style.removeProperty('--input-color', 'black');
+                document.documentElement.style.removeProperty('--input-caret-color', 'black');
+                createInput();
+                break;
+
             case 'clear': 
                     window.location.reload(true);
                 break;
@@ -77,7 +96,6 @@ function onEnter(event , val) {
                 break;
 
             case '':
-                console.log("empty");
                 createInput();
                 break;
         

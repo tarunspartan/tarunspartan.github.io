@@ -1,29 +1,37 @@
-body {
-    background-color: black;
+:root {
+  --body-background-color: #121212;
+  --body-color: #eeeeee;
+  --font-size: 50px;
+  --input-color: white;
+  --input-caret-color: white;
 }
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}
+
 code {
-    color: whitesmoke; 
-    font-size: 50px;
+    font-size: var(--font-size);
     line-height: 1.6;
 }
 
 .sym {
-    color: lightsalmon
+    color: lightsalmon;
 }
 
 .cmd {
-  color : green;
-  font-size: 50px;
+  color : #24a148;
+  font-size: var(--font-size);
 }
 
-
 #blink {
-    font-size: 40px;
-    color: gray;
+    font-size: var(--font-size);
+    color: skyblue;
     animation: blink infinite  0.5s;
   } 
 
-  @keyframes blink {
+@keyframes blink {
     from {opacity: 0;}
     to {opacity: 1;} 
   } 
@@ -43,25 +51,20 @@ code {
   }
 
 input {
-  background-color: black;
-  color: white;
-  font-size: 50px;
-  border-color:black;
-  outline-color: black;
-  caret-color: white;
+  background-color: transparent;
+  color: var(--input-color);
+  font-size: var(--font-size);
+  caret-color: var(--input-caret-color);
   justify-content: flex-end;
-
-}
-
-input:focus {
   outline-style: none;
+  border: none;
 }
 
 #error {
-  color: red;
+  color: #da1e28;
 }
 
 .e {
   color : cadetblue;
-  font-size: 42px;
+  font-size: 35px  ; 
 }
