@@ -34,7 +34,7 @@ function onEnter(event , val) {
                 // console.log("help");
                 let help = document.createElement("code");
                 // help.setAttribute("id","error");
-                help.innerHTML="<span class='cmd'>sn</span> for social networks <br><span  class='cmd'>edu</span> for education<br><span class='cmd'>exp</span> for experience<br><span class='cmd'>light</span> & <span class='cmd'>dark</span> for themes";
+                help.innerHTML="<span class='cmd'>sn</span> for social networks <br><span  class='cmd'>edu</span> for education<br><span class='cmd'>exp</span> for experience<br><span class='cmd'>light</span> & <span class='cmd'>dark</span> for page themes";
                 document.getElementById("main").append(help);
                 let hbr = document.createElement("br");
                 document.getElementById('main').appendChild(hbr);
@@ -72,7 +72,7 @@ function onEnter(event , val) {
                 break;
 
             case 'light':
-                document.documentElement.style.setProperty('--body-background-color', '#eeeeee');
+                document.documentElement.style.setProperty('--body-background-color', '#f6f6f6');
                 document.documentElement.style.setProperty('--body-color', '#121212');
                 document.documentElement.style.setProperty('--input-color', 'black');
                 document.documentElement.style.setProperty('--input-caret-color', 'black');
