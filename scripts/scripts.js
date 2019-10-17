@@ -28,7 +28,7 @@ function onEnter(event , val) {
     // console.log(value);
     if(event.key === "Enter"){
         disable();
-        let v = val.toLowerCase()
+        let v = val.toLowerCase().split(' ').join('');
         switch (v) {
             case 'help':
                 // console.log("help");
