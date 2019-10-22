@@ -1,9 +1,14 @@
+
 :root {
   --body-background-color: #121212;
   --body-color: #f6f6f6;
   --font-size: 50px;
   --input-color: white;
   --input-caret-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -58,11 +63,14 @@ input {
   justify-content: flex-end;
   outline-style: none;
   border: none;
+  text-transform: lowercase;
 }
 
 #error {
   color: #da1e28;
   font-size: 35px;
+  opacity: 0.8;
+  text-transform: lowercase;
 }
 
 .e {

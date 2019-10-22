@@ -14,7 +14,7 @@ function createInput() {
     inputElmnt.setAttribute("id","inputTag");
     inputElmnt.setAttribute("type","text");
     inputElmnt.setAttribute("onkeydown","onEnter(event,value)");
-    inputElmnt.setAttribute("autofocus","autofocus");
+    // inputElmnt.setAttribute("autofocus","autofocus");
     spanElmnt.append(inputElmnt);
     document.getElementById('main').append(codeUK);
     
@@ -87,10 +87,7 @@ function onEnter(event , val) {
                 createInput();
                 break;
 
-            case 'clear': 
-                    window.location.reload(true);
-                break;
-
+            case 'clear':
             case 'cls': 
                 window.location.reload(true);
                 break;
