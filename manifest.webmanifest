@@ -1,0 +1,21 @@
+{
+	"dir" : "ltr",
+	"lang" : "id",
+	"name" : "tarunspartan",
+	"scope" : "/",
+	"display" : "browser",
+	"start_url" : "https://tarunspartan.github.io/",
+	"short_name" : "tarunspartan",
+	"theme_color" : "transparent",
+	"description" : "",
+	"orientation" : "any",
+	"background_color" : "transparent",
+	"related_applications" : "",
+	"prefer_related_applications" : "false",
+	"icons" : [
+		{
+			"src": "https://tarunspartan.github.io/images/icon.png",
+			"sizes": "300x300"
+		}],
+	"generated" : "true"
+}
