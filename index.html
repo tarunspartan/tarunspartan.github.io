@@ -6,42 +6,11 @@
         <script src="pwabuilder-sw-register.js"></script>
         <script src="pwabuilder-sw.js"></script>
         <script src="./scripts/scripts.js"></script>
+        <script src="./scripts//help.js"></script>
         <link rel = "icon" href = "./images/icon.png" type = "image/x-icon">
         <link rel = "stylesheet" href = "./styles/style.css"  type = "text/css"/>
     </head>
     <body onload="createInput()">
-        <script>
-                            
-    let deferredPrompt = null;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-});
-
-async function install() {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    console.log(deferredPrompt)
-    deferredPrompt.userChoice.then(function(choiceResult){
-
-      if (choiceResult.outcome === 'accepted') {
-      console.log('Your PWA has been installed');
-    } else {
-      console.log('User chose to not install your PWA');
-    }
-
-    deferredPrompt = null;
-
-    });
-
- 
-  }
-}
-
-        </script>
         <button onclick="install()">
             Install
           </button>
