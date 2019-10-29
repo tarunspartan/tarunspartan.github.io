@@ -2,7 +2,7 @@
 	"dir" : "ltr",
 	"lang" : "id",
 	"name" : "tarunspartan",
-	"scope" : "/index.html",
+	"scope" : "/",
 	"display" : "browser",
 	"start_url" : "https://tarunspartan.github.io/",
 	"short_name" : "Tarun",
