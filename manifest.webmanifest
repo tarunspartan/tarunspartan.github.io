@@ -2,12 +2,12 @@
 	"dir" : "ltr",
 	"lang" : "id",
 	"name" : "tarunspartan",
-	"scope" : "/",
+	"scope" : "/index.html",
 	"display" : "browser",
 	"start_url" : "https://tarunspartan.github.io/",
-	"short_name" : "tarunspartan",
+	"short_name" : "Tarun",
 	"theme_color" : "transparent",
-	"description" : "",
+	"description" : "turned my website into PWA.",
 	"orientation" : "any",
 	"background_color" : "transparent",
 	"related_applications" : "",
@@ -17,5 +17,6 @@
 			"src": "https://tarunspartan.github.io/images/icon.png",
 			"sizes": "300x300"
 		}],
-	"generated" : "true"
+	"screenshots" : [],
+	"generated" : "undefined"
 }
