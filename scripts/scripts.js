@@ -1,9 +1,21 @@
+
 window.addEventListener("click",function(){
     document.getElementById("inputTag").focus();
 })
 
 function createInput() {
-    
+
+                
+        lax.setup() // init
+
+        const updateLax = () => {
+              lax.update(window.scrollY)
+              window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+                
+
     let codeUK = document.createElement("code");
     let spanElmnt = document.createElement("span");
     spanElmnt.setAttribute("class","sym");
