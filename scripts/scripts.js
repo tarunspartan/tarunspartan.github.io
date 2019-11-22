@@ -46,7 +46,7 @@ function onEnter(event , val) {
                 // console.log("help");
                 let help = document.createElement("code");
                 // help.setAttribute("id","error");
-                help.innerHTML="<span class='cmd'>sn</span> for social networks <br><span  class='cmd'>edu</span> for education<br><span class='cmd'>exp</span> for experience<br><span class='cmd'>light</span> & <span class='cmd'>dark</span> for page themes";
+                help.innerHTML="<span class='cmd'>sn</span> for social networks <br><span  class='cmd'>edu</span> for education<br><span class='cmd'>exp</span> for experience<br><span  class='cmd'>work </span>to see my work<br><span class='cmd'>light</span> & <span class='cmd'>dark</span> for page themes";
                 document.getElementById("main").append(help);
                 let hbr = document.createElement("br");
                 document.getElementById('main').appendChild(hbr);
@@ -97,6 +97,11 @@ function onEnter(event , val) {
                 document.documentElement.style.removeProperty('--input-color', 'black');
                 document.documentElement.style.removeProperty('--input-caret-color', 'black');
                 createInput();
+                break;
+
+            case 'work':
+                createInput();
+                window.open("https://tarunspartan.github.io/work-showcase/","_blank","width=1300,height=650");
                 break;
 
             case 'clear':
