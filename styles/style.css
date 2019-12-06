@@ -2,7 +2,7 @@
 :root {
   --body-background-color: #121212;
   --body-color: #f6f6f6;
-  --font-size: 50px;
+  --font-size: 3rem;
   --input-color: white;
   --input-caret-color: white;
 }
@@ -59,7 +59,7 @@ code {
 input {
   background-color: transparent;
   color: var(--input-color);
-  font-size: var(--font-size);
+  font-size: 2rem;
   caret-color: var(--input-caret-color);
   justify-content: flex-end;
   outline-style: none;
